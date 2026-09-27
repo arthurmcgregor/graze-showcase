@@ -1,0 +1,2 @@
+SID=<sid>
+Auth=reader/<auth-token>

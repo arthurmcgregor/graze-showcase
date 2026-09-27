@@ -1,0 +1,26 @@
+{{define "row.html"}}
+<li class="row{{if .Read}} row-read{{end}}" id="row-{{.ID}}">
+    <div class="swipe swipe-left">
+        <button class="swipe-btn swipe-read" hx-post="{{.ReadHref}}" hx-target="#row-{{.ID}}" hx-swap="outerHTML"{{if .Hides}} data-hide{{end}}>Read</button>
+    </div>
+    <div class="row-content">
+        {{if .Read}}
+        <button class="row-dot" hx-post="{{.UnreadHref}}" hx-target="#row-{{.ID}}" hx-swap="outerHTML"
+                aria-label="Mark unread" title="Mark unread (m)"><span class="dot"></span></button>
+        {{else}}
+        <button class="row-dot" hx-post="{{.ReadHref}}" hx-target="#row-{{.ID}}" hx-swap="outerHTML"{{if .Hides}} data-hide{{end}}
+                aria-label="Mark read" title="Mark read (m)"><span class="dot"></span></button>
+        {{end}}
+        <a href="{{.Href}}" class="row-title">{{.Title}}</a>
+        {{with .Excerpt}}<p class="row-excerpt">{{.}}</p>{{end}}
+        {{with .LeadImage}}<img class="row-image" src="{{.}}" alt="" loading="lazy" referrerpolicy="no-referrer">{{end}}
+        <span class="row-meta">
+            <a href="{{.FeedHref}}" class="feed-chip">{{.Feed}}</a>
+            <time datetime="{{.ISO}}" title="{{.ISO}}" class="row-when">{{.When}}</time>
+        </span>
+    </div>
+    <div class="swipe swipe-right">
+        <button class="swipe-btn swipe-unread" hx-post="{{.UnreadHref}}" hx-target="#row-{{.ID}}" hx-swap="outerHTML">Unread</button>
+    </div>
+</li>
+{{end}}

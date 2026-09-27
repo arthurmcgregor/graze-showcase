@@ -1,0 +1,619 @@
+{
+  "id": "user/-/state/com.google/reading-list",
+  "updated": 1790119709,
+  "items": [
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d7",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695127",
+      "published": 1790114018,
+      "title": "Council approves new cycleway along the waterfront",
+      "canonical": [
+        {
+          "href": "https://example.com/3a257655"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/3a257655"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "We spent most of the week on the new release, and most of that on the parts nobody will see. The results."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d6",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695126",
+      "published": 1790113901,
+      "title": "Why the ferry timetable changes again in spring",
+      "canonical": [
+        {
+          "href": "https://example.com/1e8f6022"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/1e8f6022"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "There is a particular quiet on the river just before the tide turns. Nothing here is new, exactly, but it has."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d5",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695125",
+      "published": 1790112351,
+      "title": "A week of rain, and what it did to the river",
+      "canonical": [
+        {
+          "href": "https://example.com/4e691c16"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/4e691c16"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The recipe is simple, and the only trick is patience with the dough. We spent most of the week on the new release, and most of that on the parts nobody will see. The results surprised us."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d4",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695124",
+      "published": 1790112134,
+      "title": "Release 2.4: faster sync and a quieter log",
+      "canonical": [
+        {
+          "href": "https://example.com/11aa514a"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/11aa514a"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "<i>Carefully</i> Three years on, the bridge is open, and the traffic is exactly where they said it would be. Most of."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d3",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695123",
+      "published": 1790111223,
+      "title": "The case for smaller, slower software",
+      "canonical": [
+        {
+          "href": "https://example.com/bb4d67c6"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/bb4d67c6"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The library will open two evenings a week from October. The best part of the trip was the part."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d2",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695122",
+      "published": 1790110593,
+      "title": "Rebuilding a wooden dinghy, part three",
+      "canonical": [
+        {
+          "href": "https://example.com/809e0a05"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/809e0a05"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "There is a particular quiet on the river just before the tide turns. Nothing here is new, exactly, but it has never been put together this way before."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d1",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695121",
+      "published": 1790109979,
+      "title": "What the census says about the next ten years",
+      "canonical": [
+        {
+          "href": "https://example.com/8eb416d1"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/8eb416d1"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "A reader asked how the map was made, so here is the long answer. It took three attempts and a borrowed clamp, but the joint is finally square. A small change."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d0",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695120",
+      "published": 1790108209,
+      "title": "Fixing the backup job that failed for a month",
+      "canonical": [
+        {
+          "href": "https://example.com/3f9aaa94"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/3f9aaa94"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "There is a particular quiet on the river just before the tide turns.."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c18425275b5",
+      "crawlTimeMsec": "1790109121934",
+      "timestampUsec": "1790109121934773",
+      "published": 1790107542,
+      "title": "Bread, patience and a very old oven",
+      "canonical": [
+        {
+          "href": "https://example.com/883f45b3"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/883f45b3"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The morning started grey, but by ten the wind had dropped and the water was flat. If you."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c18425275b4",
+      "crawlTimeMsec": "1790109121934",
+      "timestampUsec": "1790109121934772",
+      "published": 1790106851,
+      "title": "Notes from a long walk on the coast road",
+      "canonical": [
+        {
+          "href": "https://example.com/2d6f8a86"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/2d6f8a86"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "Rain is forecast for most of the weekend, clearing on Monday. Nobody at the meeting disagreed that."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c18425275b3",
+      "crawlTimeMsec": "1790109121934",
+      "timestampUsec": "1790109121934771",
+      "published": 1790111445,
+      "title": "The quiet return of the neighbourhood library",
+      "canonical": [
+        {
+          "href": "https://example.com/e1f40c71"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/e1f40c71"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The morning started grey, but by ten the wind had dropped and the water was flat. If you only read one thing about the project this month, make it this. The recipe is."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c18425275b2",
+      "crawlTimeMsec": "1790109121934",
+      "timestampUsec": "1790109121934770",
+      "published": 1790104972,
+      "title": "How we cut our build time in half",
+      "canonical": [
+        {
+          "href": "https://example.com/dba8c906"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/dba8c906"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "We launched from the ramp at the north end and rowed against the current for an hour. Three years on, the bridge is open, and the traffic is."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c18425275b1",
+      "crawlTimeMsec": "1790109121934",
+      "timestampUsec": "1790109121934769",
+      "published": 1790104197,
+      "title": "Planting for shade in a small garden",
+      "canonical": [
+        {
+          "href": "https://example.com/8e90e030"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/8e90e030"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "If you only read one thing about the project this month, make it this. The recipe is simple, and the only trick is patience with the dough."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a9",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410153",
+      "published": 1790103177,
+      "title": "Winter storms bring down power lines in the north",
+      "canonical": [
+        {
+          "href": "https://example.com/037040bc"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/037040bc"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "Most of the fixes in this version come from people who wrote in after the last one. The library will open two evenings a week from October."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a8",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410152",
+      "published": 1790102916,
+      "title": "A field guide to the birds at the estuary",
+      "canonical": [
+        {
+          "href": "https://example.com/b82d96c7"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/b82d96c7"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The results surprised us, mostly because they were so ordinary. Rain is forecast for."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a7",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410151",
+      "published": 1790102628,
+      "title": "Version 1.9 drops the legacy importer",
+      "canonical": [
+        {
+          "href": "https://example.com/4cbe596a"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/4cbe596a"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The results surprised us, mostly because they were so ordinary. Rain is forecast for most of the weekend, clearing on Monday. Nobody at the meeting disagreed that the."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a6",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410150",
+      "published": 1790102597,
+      "title": "The best tools are the ones you forget about",
+      "canonical": [
+        {
+          "href": "https://example.com/8519ef49"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/8519ef49"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "There is a particular quiet on the river just before the tide turns. Nothing here is new, exactly, but it has never been put together this way before."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a5",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410149",
+      "published": 1790100675,
+      "title": "Lessons from a year of running my own server",
+      "canonical": [
+        {
+          "href": "https://example.com/e86bffd5"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/e86bffd5"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "Nothing here is new, exactly, but it has never been put together this way before. The morning started grey, but by ten the wind had dropped and the water was flat. If you only read one."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a4",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410148",
+      "published": 1790099725,
+      "title": "Rowing upstream against the evening tide",
+      "canonical": [
+        {
+          "href": "https://example.com/f856fcf6"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/f856fcf6"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "The council says the changes will be in place before the end of summer. We launched from the ramp at the north end and rowed against the current for an hour. Three years."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c17007c40a3",
+      "crawlTimeMsec": "1790103722410",
+      "timestampUsec": "1790103722410147",
+      "published": 1790098528,
+      "title": "Why the new bridge took six years",
+      "canonical": [
+        {
+          "href": "https://example.com/6b048698"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/6b048698"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main",
+        "user/-/state/com.google/read"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "Residents have until the end of the month to have their say. A reader asked how the map was made, so here is the long answer."
+      }
+    }
+  ],
+  "continuation": "1790103722410147"
+}

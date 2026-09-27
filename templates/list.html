@@ -1,0 +1,57 @@
+{{define "content"}}
+<main class="container">
+    {{if .Error}}
+        {{template "state.html" dict "State" .Error "Action" "Retry" "Href" "/" "Second" "Open FreshRSS" "SecondHref" .FreshRSSURL}}
+    {{else}}
+    {{template "chips.html" .}}
+    {{if .Rows}}
+        <ul class="stream" id="stream">{{template "rows.html" .}}</ul>
+    {{else}}
+        {{template "state.html" dict "State" .List.Empty "Action" "Open FreshRSS" "Href" .FreshRSSURL}}
+    {{end}}
+    {{end}}
+</main>
+<div class="toast" id="toast" role="status" hidden>
+    <span id="toast-text"></span>
+    <button class="toast-undo" id="toast-undo">Undo</button>
+</div>
+<script nonce="{{.Nonce}}">
+// no-store keeps a list out of the back/forward cache in most browsers, not all.
+addEventListener('pageshow', function(e) { if (e.persisted) location.reload(); });
+
+// A row marked read in an unread list hides before FreshRSS answers, so the
+// next row comes up under the pointer. Undo clicks the row's own unread button,
+// whose answer swaps it back in where it was.
+(function() {
+    var toast = document.getElementById('toast');
+    var text = document.getElementById('toast-text');
+    var undo = document.getElementById('toast-undo');
+    var last = null, timer;
+    function show(message, row) {
+        text.textContent = message;
+        undo.hidden = !row;
+        last = row;
+        toast.hidden = false;
+        clearTimeout(timer);
+        timer = setTimeout(function() { toast.hidden = true; last = null; }, 5000);
+    }
+    document.addEventListener('htmx:beforeRequest', function(e) {
+        if (!e.detail.elt.hasAttribute('data-hide')) return;
+        var row = e.detail.elt.closest('.row');
+        row.hidden = true;
+        show('Marked read', row);
+    });
+    document.addEventListener('htmx:afterRequest', function(e) {
+        if (e.detail.successful) return;
+        var row = e.detail.elt.closest('.row');
+        if (row) row.hidden = false;
+        show('FreshRSS did not answer. Try again.', null);
+    });
+    undo.addEventListener('click', function() {
+        if (last) last.querySelector('.swipe-unread').click();
+        toast.hidden = true;
+        last = null;
+    });
+})();
+</script>
+{{end}}

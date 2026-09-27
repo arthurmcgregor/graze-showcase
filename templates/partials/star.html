@@ -1,0 +1,9 @@
+{{define "star.html"}}
+<button class="action-btn{{if .Starred}} action-btn-on{{end}}"
+        hx-post="/a/{{.ID}}/{{if .Starred}}unstar{{else}}star{{end}}"
+        hx-target="this" hx-swap="outerHTML"
+        aria-pressed="{{.Starred}}"
+        aria-label="{{if .Starred}}Remove star{{else}}Star{{end}}">
+    {{if .Starred}}{{icon "star-filled"}}{{else}}{{icon "star"}}{{end}}
+</button>
+{{end}}

@@ -1,0 +1,6 @@
+{{define "rows.html"}}
+{{range .Rows}}{{template "row.html" .}}{{end}}
+{{if .More}}
+<li class="sentinel hx-dim" hx-get="{{.List.Path}}?c={{.More}}" hx-trigger="intersect once" hx-target="this" hx-swap="outerHTML" hx-indicator="this"></li>
+{{end}}
+{{end}}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0d1117"/>
+  <!-- Pasture -->
+  <ellipse cx="32" cy="53" rx="21" ry="5" fill="#3a5a44"/>
+  <!-- Legs, behind the fleece -->
+  <g stroke="#6b5f8a" stroke-width="3" stroke-linecap="round">
+    <path d="M26 40v10"/><path d="M31 40v10"/>
+    <path d="M40 40v10"/><path d="M45 40v10"/>
+  </g>
+  <!-- Fleece: overlapping lobes, flat fill -->
+  <g fill="#cbb8ee">
+    <circle cx="28" cy="33" r="9"/>
+    <circle cx="36" cy="30" r="10"/>
+    <circle cx="44" cy="34" r="8"/>
+    <circle cx="23" cy="38" r="6"/>
+  </g>
+  <!-- Head, down in the grass -->
+  <ellipse cx="18" cy="43" rx="6" ry="5" fill="#6b5f8a"/>
+  <ellipse cx="21" cy="37" rx="3.2" ry="2.2" fill="#6b5f8a"/>
+  <circle cx="16" cy="41" r="1.2" fill="#0d1117"/>
+</svg>

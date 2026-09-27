@@ -1,0 +1,33 @@
+{{define "content"}}
+<main class="container article">
+    <header class="article-header">
+        <div class="article-nav">
+            <a href="{{.From.Path}}" class="back-link">{{icon "arrow-left"}} Back</a>
+            <form method="post" action="{{.From.ActionHref .Article.ID "unread"}}">
+                <button class="action-btn" aria-label="Back, keep unread" title="Back, keep unread"><span class="dot"></span></button>
+            </form>
+        </div>
+        <div class="article-actions">
+            {{template "star.html" .Article}}
+            {{if .Article.Original}}
+            <a href="{{.Article.Original}}" class="action-btn" target="_blank" rel="noopener" aria-label="View original">{{icon "external-link"}}</a>
+            {{end}}
+        </div>
+    </header>
+
+    <h1 class="article-title">{{.Article.Title}}</h1>
+    <p class="article-byline">
+        <a href="{{.Article.FeedHref}}" class="feed-chip">{{.Article.Feed}}</a>
+        {{if .Article.Author}}<span class="article-author">{{.Article.Author}}</span>{{end}}
+        <time datetime="{{.Article.ISO}}" title="{{.Article.ISO}}">{{.Article.When}}</time>
+    </p>
+
+    <div class="article-body">{{.Article.Body}}</div>
+
+    {{if .Article.Original}}
+    <footer class="article-footer">
+        <a href="{{.Article.Original}}" target="_blank" rel="noopener">Read on {{host .Article.Original}} &rarr;</a>
+    </footer>
+    {{end}}
+</main>
+{{end}}

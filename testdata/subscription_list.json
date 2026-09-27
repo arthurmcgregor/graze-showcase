@@ -1,0 +1,466 @@
+{
+  "subscriptions": [
+    {
+      "id": "feed/54",
+      "title": "Harbour Notes\uff1f",
+      "categories": [
+        {
+          "id": "user/-/label/Another & Ampersand",
+          "label": "Another & Ampersand"
+        }
+      ],
+      "url": "https://example.com/51abde84/feed.xml",
+      "htmlUrl": "https://example.com/08b24bff",
+      "iconUrl": "https://rss.example.com/f.php?h=a2f78747",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/97",
+      "title": "The Quiet Workshop\uff1f",
+      "categories": [
+        {
+          "id": "user/-/label/Another & Ampersand",
+          "label": "Another & Ampersand"
+        }
+      ],
+      "url": "https://example.com/f51823ab/feed.xml",
+      "htmlUrl": "https://example.com/4f0c3834",
+      "iconUrl": "https://rss.example.com/f.php?h=2b4c4c6e",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/62",
+      "title": "Field Journal",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/0dfefd0e/feed.xml",
+      "htmlUrl": "https://example.com/8fb7f300",
+      "iconUrl": "https://rss.example.com/f.php?h=5722025f",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/12",
+      "title": "Small Batch Software",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/3962b695/feed.xml",
+      "htmlUrl": "https://example.com/a8b86b6b",
+      "iconUrl": "https://rss.example.com/f.php?h=e9038b3b",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/55",
+      "title": "Evening Standard Time",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/14059319/feed.xml",
+      "htmlUrl": "https://example.com/55584fe8",
+      "iconUrl": "https://rss.example.com/f.php?h=97ff35d7",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/69",
+      "title": "Longform Weekly",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/7caebd36/feed.xml",
+      "htmlUrl": "https://example.com/f89d0d7b",
+      "iconUrl": "https://rss.example.com/f.php?h=33aa7b00",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/53",
+      "title": "Tidal Commons",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/d8e4d20a/feed.xml",
+      "htmlUrl": "https://example.com/008aad14",
+      "iconUrl": "https://rss.example.com/f.php?h=5b2b8295",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/73",
+      "title": "The Kettle Post",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/d6341e65/feed.xml",
+      "htmlUrl": "https://example.com/ca6556c9",
+      "iconUrl": "https://rss.example.com/f.php?h=e6648507",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/80",
+      "title": "Paper Lantern",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/2c7cce08/feed.xml",
+      "htmlUrl": "https://example.com/b81023dc",
+      "iconUrl": "https://rss.example.com/f.php?h=6218f0b4",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/74",
+      "title": "Northern Ledger",
+      "categories": [
+        {
+          "id": "user/-/label/Software",
+          "label": "Software"
+        }
+      ],
+      "url": "https://example.com/3ab86ee6/feed.xml",
+      "htmlUrl": "https://example.com/5ff1491f",
+      "iconUrl": "https://rss.example.com/f.php?h=a0d72e2d",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/100",
+      "title": "Coastline Radio",
+      "categories": [
+        {
+          "id": "user/-/label/News",
+          "label": "News"
+        }
+      ],
+      "url": "https://example.com/e0213b72/feed.xml",
+      "htmlUrl": "https://example.com/d49c57f0",
+      "iconUrl": "https://rss.example.com/f.php?h=032ac00d",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/101",
+      "title": "Open Circuit",
+      "categories": [
+        {
+          "id": "user/-/label/News",
+          "label": "News"
+        }
+      ],
+      "url": "https://example.com/a5dbe1e2/feed.xml",
+      "htmlUrl": "https://example.com/62589fad",
+      "iconUrl": "https://rss.example.com/f.php?h=24df0443",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/98",
+      "title": "Garden Variety",
+      "categories": [
+        {
+          "id": "user/-/label/News",
+          "label": "News"
+        }
+      ],
+      "url": "https://example.com/9e99b3c6/feed.xml",
+      "htmlUrl": "https://example.com/9241acb1",
+      "iconUrl": "https://rss.example.com/f.php?h=2c8c4f04",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/102",
+      "title": "Slow Roads",
+      "categories": [
+        {
+          "id": "user/-/label/News",
+          "label": "News"
+        }
+      ],
+      "url": "https://example.com/7fe0d56c/feed.xml",
+      "htmlUrl": "https://example.com/1e37897f",
+      "iconUrl": "https://rss.example.com/f.php?h=3a426495",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/99",
+      "title": "The Margin",
+      "categories": [
+        {
+          "id": "user/-/label/News",
+          "label": "News"
+        }
+      ],
+      "url": "https://example.com/f9c950c2/feed.xml",
+      "htmlUrl": "https://example.com/eeca2d32",
+      "iconUrl": "https://rss.example.com/f.php?h=fabf8b0c",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/14",
+      "title": "Weekend Carpentry",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/7481eff2/feed.xml",
+      "htmlUrl": "https://example.com/b3889877",
+      "iconUrl": "https://rss.example.com/f.php?h=c5cdf8e6",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/23",
+      "title": "Release Notes Daily",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/0df5cf48/feed.xml",
+      "htmlUrl": "https://example.com/ff94c2a9",
+      "iconUrl": "https://rss.example.com/f.php?h=053c3f51",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/7",
+      "title": "Draft Horse",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/ab8b049a/feed.xml",
+      "htmlUrl": "https://example.com/66681d48",
+      "iconUrl": "https://rss.example.com/f.php?h=33302046",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/3",
+      "title": "Lighthouse Letters",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/661a4181/feed.xml",
+      "htmlUrl": "https://example.com/5c43debf",
+      "iconUrl": "https://rss.example.com/f.php?h=aac1a44a",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/94",
+      "title": "Plain Text Press",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/5c038dc9/feed.xml",
+      "htmlUrl": "https://example.com/2c66310a",
+      "iconUrl": "https://rss.example.com/f.php?h=755a5159",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/15",
+      "title": "Chart & Compass",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/a8631e49/feed.xml",
+      "htmlUrl": "https://example.com/7d19c514",
+      "iconUrl": "https://rss.example.com/f.php?h=bc411da4",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/31",
+      "title": "The Tinkerer",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/263a1398/feed.xml",
+      "htmlUrl": "https://example.com/1098eab0",
+      "iconUrl": "https://rss.example.com/f.php?h=fc968b13",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/4",
+      "title": "Birch and Pine",
+      "categories": [
+        {
+          "id": "user/-/label/Uncategorized",
+          "label": "Uncategorized"
+        }
+      ],
+      "url": "https://example.com/5e99b6cc/feed.xml",
+      "htmlUrl": "https://example.com/597c4d74",
+      "iconUrl": "https://rss.example.com/f.php?h=e18e8f91",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/91",
+      "title": "Morning Tide",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/cc4f5d36/feed.xml",
+      "htmlUrl": "https://example.com/67190ed5",
+      "iconUrl": "https://rss.example.com/f.php?h=0137fba3",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/92",
+      "title": "Signal Fire",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/5a9d7843/feed.xml",
+      "htmlUrl": "https://example.com/5881ae20",
+      "iconUrl": "https://rss.example.com/f.php?h=b374e9c5",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/85",
+      "title": "Rust Belt Review",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/0161ef46/feed.xml",
+      "htmlUrl": "https://example.com/2814fce9",
+      "iconUrl": "https://rss.example.com/f.php?h=d81d6ea0",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/86",
+      "title": "Cabin Fever",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/50a50cdc/feed.xml",
+      "htmlUrl": "https://example.com/af89f092",
+      "iconUrl": "https://rss.example.com/f.php?h=57e9b30e",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/90",
+      "title": "Upstream",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/1a352f2c/feed.xml",
+      "htmlUrl": "https://example.com/e23371b4",
+      "iconUrl": "https://rss.example.com/f.php?h=19838e9d",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/93",
+      "title": "Kitchen Table",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/b2a24fb4/feed.xml",
+      "htmlUrl": "https://example.com/c04769cc",
+      "iconUrl": "https://rss.example.com/f.php?h=dbf619e5",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/88",
+      "title": "The Long Way Round",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/a936bc54/feed.xml",
+      "htmlUrl": "https://example.com/18b5c99c",
+      "iconUrl": "https://rss.example.com/f.php?h=0f8da72b",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/89",
+      "title": "Sketchbook",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/a1b2761a/feed.xml",
+      "htmlUrl": "https://example.com/baf09c1e",
+      "iconUrl": "https://rss.example.com/f.php?h=0acbae4d",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/87",
+      "title": "Rivermouth",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/1b91b53c/feed.xml",
+      "htmlUrl": "https://example.com/535e8507",
+      "iconUrl": "https://rss.example.com/f.php?h=4d58e7ed",
+      "frss:priority": "main"
+    },
+    {
+      "id": "feed/84",
+      "title": "Commonplace",
+      "categories": [
+        {
+          "id": "user/-/label/Video",
+          "label": "Video"
+        }
+      ],
+      "url": "https://example.com/f026d620/feed.xml",
+      "htmlUrl": "https://example.com/122ac700",
+      "iconUrl": "https://rss.example.com/f.php?h=f230d26a",
+      "frss:priority": "main"
+    }
+  ]
+}

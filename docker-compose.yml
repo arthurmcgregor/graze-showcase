@@ -1,0 +1,29 @@
+services:
+  graze:
+    build:
+      context: .
+    restart: always
+    mem_limit: 128m       # Go, no database; idles a few MiB
+    ports:
+      - "${PORT:-8097}:${PORT:-8097}"
+    environment:
+      # FreshRSS is reached by container name on its own network, which skips
+      # the reverse proxy in front of both.
+      - PORT=${PORT:-8097}
+      - FRESHRSS_API_URL=${FRESHRSS_API_URL:-http://freshrss:80/api/greader.php}
+      - FRESHRSS_API_USER=${FRESHRSS_API_USER}
+      - FRESHRSS_WEB_URL=${FRESHRSS_WEB_URL}
+      - GRAZE_DEFAULT_TZ=${GRAZE_DEFAULT_TZ:-UTC}
+      - GRAZE_EMBED_HOSTS=${GRAZE_EMBED_HOSTS:-}
+    env_file:
+      # FRESHRSS_API_PASSWORD; see example-secret.env.
+      - path: ./secret.env
+        required: false
+    networks:
+      - default
+      - freshrss
+
+networks:
+  freshrss:
+    name: ${FRESHRSS_NETWORK:-freshrss_default}
+    external: true

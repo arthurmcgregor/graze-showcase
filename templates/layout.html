@@ -1,0 +1,211 @@
+{{define "layout"}}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{if .Title}}{{.Title}} · Graze{{else}}Graze{{end}}</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="apple-touch-icon" href="/static/favicon.svg">
+    <meta name="theme-color" content="#0d1117">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="preload" href="/static/fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+    <script nonce="{{.Nonce}}">
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/static/sw.js');
+    }
+    (function() {
+        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        if (tz && document.cookie.indexOf("tz=" + tz) === -1) {
+            document.cookie = "tz=" + tz + ";path=/;max-age=31536000;SameSite=Lax";
+            location.reload();
+        }
+    })();
+    try {
+        if (localStorage.getItem('previews')) document.documentElement.classList.add('previews');
+    } catch (e) {}
+    // A lead image's size is unknown until it loads, and tracking pixels and
+    // icons are small. Listening this early catches images that load before
+    // the rest of the page's script runs.
+    function hideSmallImage(e) {
+        var img = e.target;
+        if (img.classList && img.classList.contains('row-image') && (e.type === 'error' || img.naturalWidth < 80)) img.hidden = true;
+    }
+    document.addEventListener('load', hideSmallImage, true);
+    document.addEventListener('error', hideSmallImage, true);
+    </script>
+</head>
+<body>
+    <nav class="nav-bar">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand" aria-label="Graze home">
+            <img src="/static/logo.svg" alt="" class="nav-brand-mark" width="26" height="26">
+            <span class="nav-brand-name">graze</span>
+        </a>
+        <div class="nav-right">
+            <a href="/starred" class="nav-tab{{if and .List .List.Starred}} nav-tab-on{{end}}" aria-label="Starred" title="Starred">
+                {{icon "star"}}
+            </a>
+            <details class="nav-menu">
+                <summary class="nav-avatar" aria-label="Menu for {{.User}}">
+                    <span class="nav-avatar-initial">{{initial .User}}</span>
+                </summary>
+                <div class="nav-menu-panel" role="menu">
+                    <div class="nav-menu-header">
+                        <span class="nav-menu-name">{{.User}}</span>
+                    </div>
+                    <a href="{{.FreshRSSURL}}" class="nav-menu-item" role="menuitem" target="_blank" rel="noopener">
+                        {{icon "rss"}}
+                        <span>Open FreshRSS</span>
+                    </a>
+                    <button type="button" class="nav-menu-item" role="menuitem" id="toggle-previews">
+                        {{icon "text"}}
+                        <span class="previews-off">Show excerpts</span>
+                        <span class="previews-on">Hide excerpts</span>
+                    </button>
+                    {{with .List}}{{if .CatchUp}}
+                    <form method="post" action="{{.CatchUpHref}}">
+                        <button class="nav-menu-item" role="menuitem"
+                                data-confirm="Mark everything in {{.Title}} as read? This cannot be undone.">
+                            {{icon "check-check"}}
+                            <span>Mark {{.Title}} read</span>
+                        </button>
+                    </form>
+                    {{end}}{{end}}
+                </div>
+            </details>
+        </div>
+      </div>
+    </nav>
+    <div class="ptr" id="ptr" aria-hidden="true"></div>
+    {{template "content" .}}
+    <script nonce="{{.Nonce}}">
+    document.addEventListener('click', function(e) {
+        var menu = document.querySelector('.nav-menu[open]');
+        if (menu && !menu.contains(e.target)) menu.removeAttribute('open');
+    });
+
+    document.getElementById('toggle-previews').addEventListener('click', function() {
+        var on = document.documentElement.classList.toggle('previews');
+        try {
+            if (on) localStorage.setItem('previews', '1');
+            else localStorage.removeItem('previews');
+        } catch (e) {}
+    });
+
+    document.addEventListener('click', function(e) {
+        var el = e.target.closest('[data-confirm]');
+        if (el && !confirm(el.getAttribute('data-confirm'))) e.preventDefault();
+    });
+
+    // Keyboard nav. Focus is the selection, so Enter opens the article and the
+    // browser does the scrolling; j and k only move it, and m clicks the
+    // button the row already carries, so HTMX owns the request either way.
+    (function() {
+        var refocus = null;
+        document.addEventListener('keydown', function(e) {
+            if (e.metaKey || e.ctrlKey || e.altKey) return;
+            var rows = Array.prototype.slice.call(document.querySelectorAll('.row:not([hidden]) .row-title'));
+            if (!rows.length) return;
+            var i = rows.indexOf(document.activeElement);
+            if (e.key === 'j' || e.key === 'k') {
+                var step = e.key === 'j' ? 1 : -1;
+                var next = i < 0 ? rows[0] : rows[Math.min(Math.max(i + step, 0), rows.length - 1)];
+                next.focus();
+                e.preventDefault();
+            } else if (e.key === 'm' && i >= 0) {
+                var row = rows[i].closest('.row');
+                refocus = row.id;
+                row.querySelector('.row-dot').click();
+                // A row marked read may be hidden now, so the next one takes focus.
+                if (row.hidden) {
+                    refocus = null;
+                    var after = rows[i + 1] || rows[i - 1];
+                    if (after) after.focus();
+                }
+                e.preventDefault();
+            }
+        });
+        // A marked row is replaced wholesale, which drops the focus it held.
+        document.addEventListener('htmx:afterSettle', function() {
+            if (!refocus) return;
+            var title = document.querySelector('#' + refocus + ' .row-title');
+            refocus = null;
+            if (title) title.focus();
+        });
+    })();
+
+    // Swipe a row either way to mark it read or unread. Lock to one axis after
+    // 15px so the page can still scroll; past 80px, click the button the row
+    // already carries, so HTMX owns the request either way.
+    (function() {
+        var startX, startY, row, locked, horizontal;
+        document.addEventListener('touchstart', function(e) {
+            row = e.target.closest('.row-content');
+            if (!row) return;
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            locked = false;
+            horizontal = false;
+        }, {passive: true});
+        document.addEventListener('touchmove', function(e) {
+            if (!row) return;
+            var dx = e.touches[0].clientX - startX;
+            var dy = e.touches[0].clientY - startY;
+            if (!locked) {
+                if (Math.abs(dx) < 15 && Math.abs(dy) < 15) return;
+                locked = true;
+                horizontal = Math.abs(dx) > Math.abs(dy);
+                if (horizontal) row.style.transition = 'none';
+            }
+            if (!horizontal) { row = null; return; }
+            row.style.transform = 'translateX(' + dx + 'px)';
+        }, {passive: true});
+        document.addEventListener('touchend', function(e) {
+            if (!row) return;
+            row.style.transition = '';
+            if (horizontal) {
+                var dx = e.changedTouches[0].clientX - startX;
+                var btn = null;
+                if (dx > 80) btn = row.closest('.row').querySelector('.swipe-read');
+                else if (dx < -80) btn = row.closest('.row').querySelector('.swipe-unread');
+                if (btn) btn.click();
+            }
+            row.style.transform = '';
+            row = null;
+        });
+    })();
+
+    // Pull to re-query. It asks FreshRSS again and drops the rows that are now
+    // read; it does not make FreshRSS fetch the feeds, which its own cron does
+    // at two and thirty-two past the hour.
+    (function() {
+        var ptr = document.getElementById('ptr');
+        var startY = null, armed = false;
+        if (!ptr) return;
+        document.addEventListener('touchstart', function(e) {
+            startY = window.scrollY === 0 ? e.touches[0].clientY : null;
+        }, {passive: true});
+        document.addEventListener('touchmove', function(e) {
+            if (startY === null || window.scrollY > 0) return;
+            var dy = e.touches[0].clientY - startY;
+            if (dy <= 0) return;
+            ptr.style.height = Math.min(dy / 2, 56) + 'px';
+            armed = dy > 90;
+            ptr.textContent = armed ? 'Release to re-query FreshRSS' : 'Pull to re-query FreshRSS';
+        }, {passive: true});
+        document.addEventListener('touchend', function() {
+            ptr.style.height = '';
+            if (armed) location.reload();
+            startY = null;
+            armed = false;
+        });
+    })();
+    </script>
+</body>
+</html>
+{{end}}

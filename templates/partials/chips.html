@@ -1,0 +1,10 @@
+{{define "chips.html"}}
+<nav class="chips" id="chips" aria-label="Categories" hx-swap-oob="true">
+    {{range .Chips}}
+    <a href="{{.List.Path}}" class="chip{{if .Active}} chip-active{{end}}{{if not .Count}} chip-quiet{{end}}"{{if .Active}} aria-current="page"{{end}}>
+        <span class="chip-label">{{.List.Title}}</span>
+        {{if .Count}}<span class="chip-count">{{.Count}}</span>{{end}}
+    </a>
+    {{end}}
+</nav>
+{{end}}

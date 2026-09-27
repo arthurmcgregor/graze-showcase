@@ -1,0 +1,67 @@
+{
+  "id": "user/-/state/com.google/reading-list",
+  "updated": 1790119709,
+  "items": [
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d7",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695127",
+      "published": 1790114018,
+      "title": "Council approves new cycleway along the waterfront",
+      "canonical": [
+        {
+          "href": "https://example.com/3a257655"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/3a257655"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "We spent most of the week on the new release, and most of that on the parts nobody will see. The results."
+      }
+    },
+    {
+      "id": "tag:google.com,2005:reader/item/00065c19843b85d6",
+      "crawlTimeMsec": "1790114522695",
+      "timestampUsec": "1790114522695126",
+      "published": 1790113901,
+      "title": "Why the ferry timetable changes again in spring",
+      "canonical": [
+        {
+          "href": "https://example.com/1e8f6022"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://example.com/1e8f6022"
+        }
+      ],
+      "categories": [
+        "user/-/state/com.google/reading-list",
+        "user/-/label/Another & Ampersand",
+        "user/-/state/org.freshrss/main"
+      ],
+      "origin": {
+        "streamId": "feed/97",
+        "htmlUrl": "https://example.com/4f0c3834",
+        "title": "The Quiet Workshop\uff1f"
+      },
+      "summary": {
+        "content": "There is a particular quiet on the river just before the tide turns. Nothing here is new, exactly, but it has."
+      }
+    }
+  ],
+  "continuation": "1790114522695126"
+}

@@ -1,0 +1,11 @@
+{{define "state.html"}}
+<div class="state" role="status">
+    <span class="state-eyebrow">{{.State.Eyebrow}}</span>
+    <h2 class="state-title">{{.State.Title}}</h2>
+    <p class="state-sub">{{.State.Sub}}</p>
+    <div class="state-actions">
+        {{if .Action}}<a href="{{.Href}}" class="btn btn-primary state-btn">{{.Action}}</a>{{end}}
+        {{if .Second}}<a href="{{.SecondHref}}" class="btn state-btn">{{.Second}}</a>{{end}}
+    </div>
+</div>
+{{end}}

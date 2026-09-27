@@ -1,0 +1,210 @@
+{
+  "max": 20,
+  "unreadcounts": [
+    {
+      "id": "feed/54",
+      "count": 0,
+      "newestItemTimestampUsec": "1788233531968576"
+    },
+    {
+      "id": "feed/97",
+      "count": 8,
+      "newestItemTimestampUsec": "1790114522695127"
+    },
+    {
+      "id": "user/-/label/Another & Ampersand",
+      "count": 8,
+      "newestItemTimestampUsec": "1790114522695127"
+    },
+    {
+      "id": "feed/62",
+      "count": 0,
+      "newestItemTimestampUsec": "1789551123994800"
+    },
+    {
+      "id": "feed/12",
+      "count": 0,
+      "newestItemTimestampUsec": "1788366722812411"
+    },
+    {
+      "id": "feed/55",
+      "count": 0,
+      "newestItemTimestampUsec": "1789074129836776"
+    },
+    {
+      "id": "feed/69",
+      "count": 0,
+      "newestItemTimestampUsec": "1788997141618188"
+    },
+    {
+      "id": "feed/53",
+      "count": 0,
+      "newestItemTimestampUsec": "1787792544314361"
+    },
+    {
+      "id": "feed/73",
+      "count": 0,
+      "newestItemTimestampUsec": "1790031742432217"
+    },
+    {
+      "id": "feed/80",
+      "count": 0,
+      "newestItemTimestampUsec": "1789642924273323"
+    },
+    {
+      "id": "feed/74",
+      "count": 0,
+      "newestItemTimestampUsec": "1789569132360101"
+    },
+    {
+      "id": "user/-/label/Software",
+      "count": 0,
+      "newestItemTimestampUsec": "1790031742432217"
+    },
+    {
+      "id": "user/-/label/New&Sport",
+      "count": 0,
+      "newestItemTimestampUsec": "0"
+    },
+    {
+      "id": "feed/100",
+      "count": 0,
+      "newestItemTimestampUsec": "1789945347314938"
+    },
+    {
+      "id": "feed/101",
+      "count": 0,
+      "newestItemTimestampUsec": "1790098323586892"
+    },
+    {
+      "id": "feed/98",
+      "count": 0,
+      "newestItemTimestampUsec": "1789092426128125"
+    },
+    {
+      "id": "feed/102",
+      "count": 0,
+      "newestItemTimestampUsec": "1789092426128049"
+    },
+    {
+      "id": "feed/99",
+      "count": 0,
+      "newestItemTimestampUsec": "1790056924296716"
+    },
+    {
+      "id": "user/-/label/News",
+      "count": 0,
+      "newestItemTimestampUsec": "1790098323586892"
+    },
+    {
+      "id": "feed/14",
+      "count": 1,
+      "newestItemTimestampUsec": "1790114522695119"
+    },
+    {
+      "id": "feed/23",
+      "count": 0,
+      "newestItemTimestampUsec": "1776691924850023"
+    },
+    {
+      "id": "feed/7",
+      "count": 0,
+      "newestItemTimestampUsec": "1789934535490525"
+    },
+    {
+      "id": "feed/3",
+      "count": 0,
+      "newestItemTimestampUsec": "1790042542414147"
+    },
+    {
+      "id": "feed/94",
+      "count": 0,
+      "newestItemTimestampUsec": "1790026334247431"
+    },
+    {
+      "id": "feed/15",
+      "count": 0,
+      "newestItemTimestampUsec": "1783323123457550"
+    },
+    {
+      "id": "feed/31",
+      "count": 0,
+      "newestItemTimestampUsec": "1788102130366863"
+    },
+    {
+      "id": "feed/4",
+      "count": 0,
+      "newestItemTimestampUsec": "1790047924288776"
+    },
+    {
+      "id": "user/-/label/Uncategorized",
+      "count": 1,
+      "newestItemTimestampUsec": "1790114522695119"
+    },
+    {
+      "id": "feed/91",
+      "count": 0,
+      "newestItemTimestampUsec": "1789004486036533"
+    },
+    {
+      "id": "feed/92",
+      "count": 0,
+      "newestItemTimestampUsec": "1789004486036525"
+    },
+    {
+      "id": "feed/85",
+      "count": 0,
+      "newestItemTimestampUsec": "1789004486036534"
+    },
+    {
+      "id": "feed/86",
+      "count": 7,
+      "newestItemTimestampUsec": "1789196537513839"
+    },
+    {
+      "id": "feed/90",
+      "count": 0,
+      "newestItemTimestampUsec": "1790015552220148"
+    },
+    {
+      "id": "feed/93",
+      "count": 0,
+      "newestItemTimestampUsec": "1789004486036529"
+    },
+    {
+      "id": "feed/88",
+      "count": 1,
+      "newestItemTimestampUsec": "1790078533359392"
+    },
+    {
+      "id": "feed/89",
+      "count": 1,
+      "newestItemTimestampUsec": "1789004486036530"
+    },
+    {
+      "id": "feed/87",
+      "count": 2,
+      "newestItemTimestampUsec": "1789004486036535"
+    },
+    {
+      "id": "feed/84",
+      "count": 0,
+      "newestItemTimestampUsec": "1789000443536951"
+    },
+    {
+      "id": "user/-/label/Video",
+      "count": 11,
+      "newestItemTimestampUsec": "1790078533359392"
+    },
+    {
+      "id": "user/-/label/Released",
+      "count": 0,
+      "newestItemTimestampUsec": "1789504339375591"
+    },
+    {
+      "id": "user/-/state/com.google/reading-list",
+      "count": 20,
+      "newestItemTimestampUsec": "1790114522695127"
+    }
+  ]
+}
